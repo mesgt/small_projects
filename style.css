@@ -5,6 +5,7 @@
 }
 
 body {
+    background-color: #f6f7fb;
     font-family: "Muli", sans-serif;
     display: flex;
     flex-direction: column;
@@ -60,4 +61,17 @@ body {
     .panel:nth-of-type(4), .panel:nth-of-type(5) {
         display: none;
     }
+}
+
+.containter1 {
+    text-align: center;
+}
+
+.progress-containter1 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
 }
