@@ -25,6 +25,10 @@ function update() {
             circle.classList.remove('active1')
         }
     })
+
+    const actives = document.querySelectorAll('.active1')
+
+    progress.style.width = ((actives.length-1) / (circles.length-1)) * 100 + '%'
 }
 
 let currentActive1 = 1
@@ -34,7 +38,6 @@ next.addEventListener('click', () => {
     if(currentActive1 > circles.length) {
         currentActive1 = circles.length
     }
-    // console.log(currentActive1)
     update();
 })
 
