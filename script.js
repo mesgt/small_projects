@@ -17,6 +17,16 @@ function removeActiveClasses() {
     })
 }
 
+function update() {
+    circles.forEach((circle, idx) => {
+        if(idx < currentActive1) {
+            circle.classList.add('active1')
+        } else {
+            circle.classList.remove('active1')
+        }
+    })
+}
+
 let currentActive1 = 1
 
 next.addEventListener('click', () => {
@@ -24,5 +34,15 @@ next.addEventListener('click', () => {
     if(currentActive1 > circles.length) {
         currentActive1 = circles.length
     }
-    console.log(currentActive1)
+    // console.log(currentActive1)
+    update();
+})
+
+prev.addEventListener('click', () => {
+    currentActive1--
+    if(currentActive1 < 1) {
+        currentActive1 = 1
+    }
+
+    update();
 })
