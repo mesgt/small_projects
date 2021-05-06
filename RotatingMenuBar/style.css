@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
+    font-family: "Lato", sans-serif;
+    overflow-x: hidden;
     margin: 0;
+    background-color: #333;
+    color: #222;
 }
+
+.container {
+    background-color: #fafafa;
+}
+
