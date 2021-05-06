@@ -116,7 +116,7 @@ body {
     transition: 0.4s ease;
 }
 
-.circle.active {
+.circle.active1 {
     border-color: var(--line-border-fill);
 }
 
@@ -134,4 +134,13 @@ body {
 
 .btn:active {
     transform: scale(0.93);
+}
+
+/* .btn:focus {
+    outline: 0;
+} */
+
+.btn:disabled {
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
 }
