@@ -33,6 +33,26 @@ body {
     color: lightblue;
 }
 
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: rgb(201, 201, 189);
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
 .form-control {
     position: relative;
     margin: 20px 0 40px;
@@ -50,3 +70,7 @@ body {
     color: #fff;
 }
 
+.form-control input:focus, 
+.form-control input:valid {
+    outline: 0;
+}
