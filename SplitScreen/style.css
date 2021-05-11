@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root {
+    --left-bg-color: rgba(180, 180, 180, 0.7);
+    --right-bg-color: rgba(43, 43, 43, 0.8)
+}
+
 * {
     box-sizing: border-box;
 }
@@ -9,6 +14,15 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
 }
 
 .container {
@@ -27,10 +41,30 @@ body {
 
 .split.left {
     left: 0;
-    background: url('https://athlonsports.com/sites/athlonsports.com/files/styles/article_top_img/public/Minnesota_Golden_Gophers_entrance_2018_gopher_football_0.jpg?itok=Tm1SEZn6')
+    background: url('./images/MN.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.split.left::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--left-bg-color);
 }
 
 .split.right {
-    left: 0;
-    background: url('https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2020/12/931/524/AP20365777310370.jpg?ve=1&tl=1')
+    right: 0;
+    background: url('./images/WI.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.split.right::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--right-bg-color);
 }
