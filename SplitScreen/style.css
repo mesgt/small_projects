@@ -23,6 +23,16 @@ h1 {
     left: 50%;
     top: 20%;
     transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.btn {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: #fff;
 }
 
 .container {
