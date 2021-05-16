@@ -41,7 +41,7 @@ h3 {
     max-width: 600px;
 }
 
-.btn {
+.jokeBtn {
     background-color: #42a2da;
     color: #fff;
     border: 0;
@@ -52,10 +52,10 @@ h3 {
     cursor: pointer;
 }
 
-.btn:active {
+.jokeBtn:active {
     transform: scale(0.94);
 }
 
-.btn:focus {
+.jokeBtn:focus {
     outline: 0;
 }
