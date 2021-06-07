@@ -99,3 +99,36 @@ body {
     display: inline-block;
 }
 
+@media(max-width: 500px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+    }
+
+    .user-form {
+        max-width: 400px;
+    }
+    
+    .user-info ul {
+        flex-direction: column;
+    }
+}
+
+@media screen and (device-aspect-ratio: 40/71) and (-webkit-min-device-pixel-ratio: 2) {
+    .user-form input {
+        margin-top: 12rem;
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    .user-form input {
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (device-width: 280px) and (device-height: 653px) and (-webkit-device-pixel-ratio: 3) {
+    .user-form input {
+        margin-top: 10rem;
+    }
+}
