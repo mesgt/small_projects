@@ -46,7 +46,8 @@ h2 {
 
 .result-container #result {
     word-wrap: break-word;
-    max-width: calc(100%-40px);
+    /* width of the button is 40px */
+    max-width: calc(100%-40px); 
 }
 
 .result-container .btn {
@@ -70,4 +71,11 @@ h2 {
 .btn-large {
     display: block;
     width: 100%;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
 }
