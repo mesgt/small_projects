@@ -18,7 +18,7 @@ async function getUser(username) {
 
 async function getRepos(username) {
     try {
-        const { data } = await axios(APIURL + username + '/repos')
+        const { data } = await axios(APIURL + username + '/repos?sort=created') //sort repos by most recently created
         addReposToCard(data)
     } catch(err) {
         createErrorCard('There is a problem with fetching the repos')
@@ -49,7 +49,7 @@ function createUserCard(user) {
     <li>${user.following} <strong>Following</strong></li>
     <li>${user.public_repos} <strong>Repos</strong></li>
     </ul>
-    <div class="repos"></div>
+    <div id="repos"></div>
     </div>
     </div>
     `
@@ -59,8 +59,10 @@ function createUserCard(user) {
 
 function addReposToCard(repos) {
     const reposEl = document.getElementById('repos')
-
     repos
+    // grab the 10 most recent due to sort above, otherwise it would grab the first 10 repos in alphabetical order
+    .slice(0, 10)
+    //add the following to the html for each repo
     .forEach(repo => {
         const repoEl = document.createElement('a')
         repoEl.classList.add('repo')
