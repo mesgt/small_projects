@@ -1,0 +1,1 @@
+const cheap = document.getElementById('cheap')
