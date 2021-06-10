@@ -29,7 +29,10 @@ const textArea = note.querySelector('textarea')
 textArea.value = text
 main.innerHTML = marked(text)
 
-deleteBtn.addEventListener('click', () => {note.remove()})
+deleteBtn.addEventListener('click', () => {
+    note.remove()
+    updateLS()
+})
 
 editBtn.addEventListener('click', () => {
     main.classList.toggle('hidden')
