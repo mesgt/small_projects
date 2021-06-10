@@ -34,7 +34,19 @@ textArea.addEventListener('input', (e) => {
     const { value } = e.target
 
     main.innerHTML = marked(value)
-} )
+
+    updateLS()
+})
 
 document.body.appendChild(note)
+}
+
+function updateLS() {
+    const notesText = document.querySelectorAll('textarea')
+
+    const notes = []
+
+    notesText.forEach(note => notes.push(note.value))
+
+    console.log(notes)
 }
