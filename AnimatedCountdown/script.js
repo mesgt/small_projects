@@ -28,9 +28,13 @@ function runAnimation() {
                 num.nextElementSibling.classList.add('in')
             } else {
                 counter.classList.add('hide')
-                finalMessage.add('show')
+                finalMessage.classList.add('show')
             }
         })
     })
 }
 
+replay.addEventListener('click', () => {
+    resetDOM()
+    runAnimation()
+})
