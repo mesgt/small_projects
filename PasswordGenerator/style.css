@@ -63,14 +63,20 @@ h2 {
     border: none;
     background-color: #3b3b98;
     color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0, 6px 6px rgba(0, 0, 0, 0.1);
     font-size: 16px;
     padding: 8px 12px;
     cursor: pointer;
 }
 
+.btn:active {
+    transform: scale(0.94);
+}
+
 .btn-large {
     display: block;
     width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0, 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .setting {

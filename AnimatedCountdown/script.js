@@ -9,11 +9,11 @@ function resetDOM() {
     counter.classList.remove('hide')
     finalMessage.classList.remove('show')
 
-    num.forEach(num => {
+    nums.forEach((num) => {
         num.classList.value = ''
     })
 
-    num[0].classList.add('in') //resets everything to initial state
+    nums[0].classList.add('in') //resets everything to initial state
 }
 
 function runAnimation() {
