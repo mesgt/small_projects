@@ -5,6 +5,9 @@ listItems.forEach((item, idx) => {
     item.addEventListener('click', () => {
         hideAllContents()
         hideAllItems()
+
+        contents[idx].classList.add('show')
+        item.classList.add('active')
     })
 })
 
@@ -13,5 +16,5 @@ function hideAllContents() {
 }
 
 function hideAllItems() {
-    contents.forEach(item => item.classList.remove('active'))
+    listItems.forEach(item => item.classList.remove('active'))
 }
