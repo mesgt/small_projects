@@ -1,5 +1,5 @@
 const poke_container = document.getElementById('poke-container')
-const pokemon_count = 10
+const pokemon_count = 150
 
 const colors = {
     fire: '#fddfdf',
@@ -10,7 +10,7 @@ const colors = {
     rock: '#d5d5d4',
     fairy: '#fceaff',
     poison: '#98d7a5',
-    bug: '#f85a3',
+    bug: '#f8b5a3',
     dragon: '#97b3e6',
     psychic: '#eaeda1',
     flying: '#f5f5f5',
@@ -41,6 +41,9 @@ const createPokemonCard = (pokemon) => {
     const id = pokemon.id.toString().padStart(3, '0')
     const poke_type = pokemon.types[0].type.name
     const type = main_type.find(type => poke_type.indexOf(type) > -1)
+    const color = colors[type]
+
+    pokemonEl.style.backgroundColor = color
 
     const pokemonInnerHTML = `
     <div class="img-container">
