@@ -9,8 +9,7 @@ codes.forEach((code, idx) => {
             setTimeout(() => codes[idx + 1].focus(), 10)
         } else if(e.key === 'Backspace') {
             setTimeout(() => codes[idx - 1].focus(), 10)
-        } else if(idx < codes.length){
-            
+        } else {
             //prevent further typing in this field
         }
     })
