@@ -1,15 +1,19 @@
 const ratings = document.querySelectorAll('.rating')
+const ratingContainer = document.querySelector('.rating-container')
 const sendBtn = document.querySelector('#send')
 const panel = document.querySelector('#panel')
 
 let selectedRating = 'Satisfied'
 
-panel.addEventListener('click', (e) => {
+ratingContainer.addEventListener('click', (e) => {
     if(e.target.parentNode.classList.contains('rating')) {
         removeActive()
         e.target.parentNode.classList.add('active')
-        selectedRating = e.target.nextElementSibling.innerHTML
-        console.log(selectedRating)
+        if(e.target.nextElementSibling) {
+            selectedRating = e.target.nextElementSibling.innerHTML
+        } else {
+            selectedRating = e.target.innerHTML
+        }
     }
 })
 
