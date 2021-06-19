@@ -48,6 +48,8 @@ let score = 0
 loadQuiz()
 
 function loadQuiz() {
+    deselectAnswers()
+
     const currentQuizData = quizData[currentQuiz]
 
     questionEl.innerText = currentQuizData.question
@@ -56,3 +58,32 @@ function loadQuiz() {
     c_text.innerText = currentQuizData.c
     d_text.innerText = currentQuizData.d
 }
+
+function deselectAnswers() {
+    answerEl.forEach(answerEl => answerEl.checked = false)
+}
+
+function getSelected() {
+    let answer
+
+    answerEl.forEach(answerEl => {
+        if(answerEl.checked) {
+            answer = answerEl.id
+        }
+    })
+
+    return answer
+}
+
+submitBtn.addEventListener('click', () => {
+    const answer = getSelected()
+    if(answer) {
+        if(answer === quizData[currentQuiz].correct){
+            score++
+        }
+
+        currentQuiz++
+
+
+    }
+})
