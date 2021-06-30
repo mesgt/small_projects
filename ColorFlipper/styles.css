@@ -62,12 +62,18 @@ body {
 
 main {
     min-height: calc(100vh-3rem);
+    margin-top: 200px;
     display: grid;
     place-items: center;
+    align-items: center;
 }
 
 ul {
     list-style-type: none;
+}
+
+li a {
+    margin: auto 50px;
 }
 
 a {
@@ -116,15 +122,16 @@ nav {
 .nav-center {
     width: 90vw;
     max-width: var(--fixed-width);
-    margin: 0 auto;
+    margin: 0 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .nav-center h4 {
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
     color: var(--clr-primary-5);
+    justify-content: center;
 }
 
 .nav-links {
