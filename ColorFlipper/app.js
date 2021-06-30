@@ -4,7 +4,6 @@ const color = document.querySelector('.color')
 
 btn.addEventListener('click', () => {
     const randomNum = getRandomNum()
-    console.log(randomNum)
 
     document.body.style.backgroundColor = colors[randomNum]
     color.textContent = colors[randomNum]
@@ -12,5 +11,5 @@ btn.addEventListener('click', () => {
 
 
 function getRandomNum() {
-    return Math.floor(Math.random() * 4)
+    return Math.floor(Math.random() * colors.length)
 }
