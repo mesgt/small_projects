@@ -61,7 +61,7 @@ body {
 }
 
 main {
-    min-height: 100vh;
+    min-height: calc(100vh-3rem);
     display: grid;
     place-items: center;
 }
@@ -143,3 +143,20 @@ nav a {
 nav a:hover {
     color: var(--clr-primary-5)
 }
+
+.container {
+    text-align: center;
+}
+
+.container h2 {
+    background: var(--clr-black);
+    color: var(--clr-white);
+    padding: 1rem;
+    border-radius: var(--radius);
+    margin-bottom: 2.5rem;
+}
+
+.color {
+    color: var(--clr-primary-5);
+}
+
