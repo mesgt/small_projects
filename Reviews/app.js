@@ -80,5 +80,11 @@ prevBtn.addEventListener('click', () => {
 })
 
 randomBtn.addEventListener('click', () => {
-    currentItem = Math.floor(Math.random)
+    const randomNum = getRandomNum()
+    currentItem = randomNum
+    showPerson(currentItem)
 })
+
+function getRandomNum() {
+    return Math.floor(Math.random() * reviews.length)
+}
