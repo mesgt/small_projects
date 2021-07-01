@@ -173,7 +173,39 @@ p {
     margin-bottom: 0.75rem;
 }
 
+.prev-btn,
+.next-btn {
+    color: var(--clr-primary-7);
+    font-size: 1.25rem;
+    background: transparent;
+    border-color: transparent;
+    margin: 0 0.5rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
 
+.prev-btn:hover,
+.next-btn:hover {
+    color: var(--clr-primary-5);
+}
+
+.random-btn {
+    margin-top: 1.5rem;
+    background: var(--clr-primary-10);
+    color: var(--clr-primary-5);
+    padding: 0.25rem 0.5rem;
+    text-transform: capitalize;
+    border-radius: 5px;
+    transition: var(--transition);
+    border-color: #777;
+    cursor: pointer;
+}
+
+.random-btn:hover {
+    background: var(--clr-primary-5);
+    color: var(--clr-primary-1);
+    font-weight: 800;
+}
 
 @media screen and (min-width: 800px) {
     h2 {
