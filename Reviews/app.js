@@ -1,3 +1,4 @@
+const btnEl = document.querySelector('.button-container')
 const prevBtn = document.querySelector('.prev-btn')
 const nextBtn = document.querySelector('.next-btn')
 const randomBtn = document.querySelector('.random-btn')
@@ -61,3 +62,23 @@ function showPerson(person) {
     info.innerHTML = item.text
 }
 
+nextBtn.addEventListener('click', () => {
+    currentItem++
+    if(currentItem > reviews.length - 1) {
+        alert("No more reviews to be displayed. Here is the first review.")
+        currentItem = 0
+    }
+    showPerson(currentItem)
+})
+
+prevBtn.addEventListener('click', () => {
+    currentItem--
+    if(currentItem < 0) {
+        currentItem = reviews.length - 1
+    }
+    showPerson(currentItem)
+})
+
+randomBtn.addEventListener('click', () => {
+    currentItem = Math.floor(Math.random)
+})
