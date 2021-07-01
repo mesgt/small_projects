@@ -158,7 +158,20 @@ p {
     border-radius: 50%;
 }
 
+.author {
+    margin-bottom: 0.25rem;
+}
 
+.job {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: var(--clr-primary-5);
+    font-size: 0.875rem;
+}
+
+.info {
+    margin-bottom: 0.75rem;
+}
 
 
 
