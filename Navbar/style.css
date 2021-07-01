@@ -8,7 +8,6 @@
     box-sizing: border-box;
 }
 
-
 /* variables */
 :root {
     /* dark shades of primary color*/
@@ -91,6 +90,12 @@ nav {
     height: 40px;
 }
 
+.links {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
 .links a {
     color: var(--clr-grey-3);
     font-size: 1rem;
@@ -99,12 +104,17 @@ nav {
     display: block;
     padding: 0.5rem 1rem;
     transition: var(--transition);
+    text-decoration-line: none;
 }
 
 .links a:hover {
     background: var(--clr-primary-8);
     color: var(--clr-primary-5);
     padding-left: 1.5rem;
+}
+
+.show-links {
+    height: 10rem;
 }
 
 .social-icons {
@@ -139,6 +149,7 @@ nav {
     .links a {
         padding: 0;
         margin: 0 0.5rem;
+        text-decoration-line: none;
     }
     .links a:hover {
         padding: 0;
