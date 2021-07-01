@@ -157,6 +157,7 @@ nav {
     }
     .social-icons {
         list-style-type: none;
+        display: flex;
     }
     .social-icons a {
         margin: 0 0.5rem;
