@@ -179,3 +179,8 @@ h3 {
     color: var(--clr-red-light);
     transform: scale(1.3);
 }
+
+.open-modal {
+    visibility: visible;
+    z-index: 10;
+}
