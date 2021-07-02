@@ -77,3 +77,13 @@ h3 {
     font-size: 1.25rem;
 }
 
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 4rem;
+        line-height: 1;
+    }
+    h3 {
+        font-size: 1.75rem;
+        line-height: 1;
+    }
+}
