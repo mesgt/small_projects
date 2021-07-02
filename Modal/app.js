@@ -3,7 +3,7 @@ const closeBtn = document.querySelector('.close-btn')
 const modalEl = document.querySelector('.modal-overlay')
 
 modalBtn.addEventListener('click', () => {
-    modalEl.classList.toggle('open-modal')
+    modalEl.classList.add('open-modal')
 })
 
 closeBtn.addEventListener('click', () => {
