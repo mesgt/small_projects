@@ -119,6 +119,10 @@ a {
     padding: 1rem 1.5rem;
 }
 
+.show-sidebar {
+    transform: translate(0)
+}
+
 .close-btn {
     font-size: 1.75rem;
     background: transparent;
@@ -152,6 +156,23 @@ a {
     background: var(--clr-primary-8);
     color: var(--clr-primary-5);
     padding-left: 1.75rem;
+}
+
+.social-icons {
+    justify-self: center;
+    display: flex;
+    padding-bottom: 2rem;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    color: var(--clr-primary-5);
+    transition: var(--transition);
+}
+
+.social-icons a:hover {
+    color: var(--clr-primary-1);
 }
 
 @media screen and (min-width: 800px) {
