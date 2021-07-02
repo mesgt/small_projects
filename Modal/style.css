@@ -107,3 +107,20 @@ h3 {
     color: var(--clr-white);
     background: var(--clr-black);
 }
+
+.hero {
+    min-height: 100vh;
+    background: url("https://images.unsplash.com/photo-1625252585995-95dcb05f5000?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    display: grid;
+    place-items: center;
+}
+
+.banner {
+    background: var(--clr-white);
+    padding: 4rem 0;
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+    text-align: center;
+    width: 90vw;
+    max-width: var(--fixed-width);
+}
