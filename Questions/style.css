@@ -91,3 +91,27 @@ p {
         font-size: 1rem;
     }
 }
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: var(--fixed-width);
+}
+
+@media screen and (min-width: 992px) {
+    .section-center {
+        width: 95vw;
+    }
+}
+
+.title {
+    margin-top: 15vh;
+    margin-bottom: 4rem;
+}
+
+.title h2 {
+    color: var(--clr-gold);
+    font-family: "Great Vibes", cursive;
+    text-align: center;
+}
+
